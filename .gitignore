@@ -1,0 +1,25 @@
+# Private working docs (roadmap, runbooks, notes, evidence) — not meant for the public repo
+private/
+
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor cruft
+.DS_Store
+*.swp
