@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars (gitignored) and fill in real values.
+
+landing_zone_state_bucket = "<bucket-del-state-de-landing-zone>"
+# landing_zone_state_key     = "landing-zone/terraform.tfstate"
+# landing_zone_state_region  = "us-east-1"
+# landing_zone_state_role_arn = "arn:aws:iam::<MGMT_ACCOUNT_ID>:role/terraform-state-reader"
+
+operator_ip = "<tu-ip-publica-sin-slash>"
+# app_port  = 3000
