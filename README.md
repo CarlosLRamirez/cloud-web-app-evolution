@@ -29,3 +29,17 @@ The details of each stage — what it demonstrates and its current status — li
 - **All infrastructure is code.** Nothing is created by hand in the AWS console on a permanent basis; everything is represented in Terraform.
 - **Complexity is earned, not assumed.** Each phase exists because it solves a real limitation of the previous one (scalability, coupling, security, deployment speed), not because it's "what's done."
 - **The app's code stays simple on purpose.** What evolves is the infrastructure around it, not the application itself.
+
+## Status & Progress
+
+**Phase 1 — Monolith on a single EC2 instance** *(in progress)*
+
+- [x] Remote Terraform state backend (S3, with native locking, compliant with the org's mandatory resource-tagging policy)
+- [x] Read-only cross-account access to the landing zone's networking outputs, via a dedicated least-privilege IAM role
+- [x] Security Group for the application host (SSH restricted to the operator, app port public, defined and validated end-to-end)
+- [ ] EC2 instance provisioning
+- [ ] Migrate this phase's Terraform state to the remote backend
+- [ ] Manual deployment of the BrewOps app (Node.js + Express + PostgreSQL) over SSH
+- [ ] End-to-end verification: public access + data persistence
+
+Later phases don't have a progress checklist yet — they'll get one once work on them starts.
