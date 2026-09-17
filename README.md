@@ -2,7 +2,7 @@
 
 A learning lab showing how a web application can evolve, step by step, from a simple monolith into a modern, decoupled, automated architecture — all deployed on AWS with Terraform.
 
-The application itself (a simple web app) is just the pretext. The focus of this repository is the **infrastructure and DevOps practices** behind each stage: what changes in the architecture, why, and what's gained (or complicated) by doing it.
+The application is **BrewOps**, a fictional craft taproom's ordering system — but it's just the pretext. The focus of this repository is the **infrastructure and DevOps practices** behind each stage: what changes in the architecture, why, and what's gained (or complicated) by doing it.
 
 ## What you'll find here
 
@@ -16,12 +16,11 @@ An incremental walkthrough of different versions of the same application, each a
 6. **Containers / serverless** — microservices migrate to containers or Lambda functions.
 7. **Automation** — infrastructure and deployments, manual until now, get automated with pipelines.
 
-The details of each stage — what it practices and its current status — live in the [**Roadmap**](ROADMAP.md).
+The details of each stage — what it demonstrates and its current status — live in the [**Roadmap**](docs/ROADMAP.md).
 
 ## How this is organized
 
-- [`ROADMAP.md`](ROADMAP.md) — the full plan, phase by phase.
-- [`docs/runbooks/`](docs/runbooks) — step-by-step guides for building each phase.
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — the full plan, phase by phase.
 - `terraform/` — all infrastructure, defined as code.
 - `app/` — the example application's code.
 
