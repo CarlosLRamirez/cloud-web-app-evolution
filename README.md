@@ -4,6 +4,8 @@ A learning lab showing how a web application can evolve, step by step, from a si
 
 The application is **BrewOps**, a fictional craft taproom's ordering system — but it's just the pretext. The focus of this repository is the **infrastructure and DevOps practices** behind each stage: what changes in the architecture, why, and what's gained (or complicated) by doing it.
 
+This is the first workload deployed on top of a multi-account AWS Organization landing zone, built and continuously evolved in a separate repository: [aws-multi-account-landing-zone](https://github.com/CarlosLRamirez/aws-multi-account-landing-zone). That project provides the account structure, networking, and org-wide guardrails; this one consumes them.
+
 ## What you'll find here
 
 An incremental walkthrough of different versions of the same application, each a bit more mature than the last in how it's deployed:

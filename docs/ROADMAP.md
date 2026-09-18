@@ -17,7 +17,7 @@ These aren't built all at once — they're introduced as each phase needs a reas
 
 ## Baseline — Landing zone *(separate repository)*
 
-The base networking (VPC, subnets, route tables, etc.) is provisioned in a separate landing-zone repository and consumed here via Terraform remote state — it isn't recreated in this project.
+This project is the first workload deployed on top of a multi-account AWS Organization landing zone, built and maintained separately — see [aws-multi-account-landing-zone](https://github.com/CarlosLRamirez/aws-multi-account-landing-zone). It keeps evolving on its own as new needs come up. The base networking (VPC, subnets, route tables, etc.) it provisions is consumed here via Terraform remote state — it isn't recreated in this project.
 
 ## Phase 1 — Monolith on a single EC2 instance ⬅ *current phase*
 
